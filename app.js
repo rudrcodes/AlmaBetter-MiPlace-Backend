@@ -27,11 +27,12 @@ const User = require("./models/user");
 //Middlewares
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: ["https://miplace-app.onrender.com" , "http://localhost:3000"],
-  })
-);
+
+// app.use(
+//   cors({
+//     origin: ["https://miplace-app.onrender.com" , "http://localhost:3000"],
+//   })
+// );
 
 //My Routes
 app.use("/api", authRoutes);
